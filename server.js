@@ -3,7 +3,7 @@ const hbs = require('hbs');
 const fs = require('fs');
 const app = express();
 
-// heroku将会设立该环境变量,并执行npm start脚本来运行程序
+// heroku将会设立该环境变量,并执行npm start脚本来运行程序。
 const port = process.env.PORT || 3000;
 
 hbs.registerPartials(__dirname + '/views/partials');
