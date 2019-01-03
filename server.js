@@ -22,7 +22,7 @@ hbs.registerHelper('screamIt', (text) => {
 app.use((req, res, next) => {
     let now = new Date().toString();
     let log = `${now} ${req.method} ${req.url}`;
-    fs.appendFile('console.log', log + '\n', (error) => {
+    fs.appendFile('server.log', log + '\n', (error) => {
         if (error) {
             console.log(error);
         }
